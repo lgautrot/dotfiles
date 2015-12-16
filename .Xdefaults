@@ -1,0 +1,47 @@
+xterm*Background:       white
+xterm*Border:           black
+xterm*ScrollBar:        on
+xterm*TitleBar:         on
+xterm*TextUnderIcon:    on
+xterm*AllowIconInput:   on
+xterm*AutoRaise:        on
+xterm*termtype:         vt100
+xterm*charClass:        33:48,37:48,45-47:48,38:48
+xterm*saveLines:        50000
+
+xclock*Foreground:      black
+xclock*Background:      light grey
+xclock*Border:          navy blue
+xclock*Highlight:       cornflower blue
+xclock*Hands:           slate blue
+xclock*Mode:            analog
+
+urxvt.background: white
+urxvt.foreground: black
+urxvt.visualBell: true
+urxvt.keysym.7e37: ^A
+urxvt.keysym.7e38: ^E
+urxvt.cutchars: "/`\"'&()*,;<=>?@{|}"
+urxvt.meta8:             true
+!urxvt.backspacekey: ^H
+urxvt.scrollTtyOutput:   false
+urxvt.scrollWithBuffer: false
+urxvt.scrollTtyKeypress: true
+urxvt.saveLines: 50000
+urxvt.scrollBar_right:   true
+urxvt.scrollColor:       #c5c0a5
+rxvt.background: white
+rxvt.foreground: black
+rxvt.visualBell: true
+rxvt.keysym.7e37: ^A
+rxvt.keysym.7e38: ^E
+rxvt.cutchars: "/`\"'&()*,;<=>?@{|}"
+rxvt.meta8:             true
+!rxvt.backspacekey: ^H
+rxvt.scrollTtyOutput:   false
+rxvt.scrollWithBuffer: false
+rxvt.scrollTtyKeypress: true
+rxvt.saveLines: 50000
+rxvt.scrollBar_right:   true
+rxvt.scrollColor:       #c5c0a5
+urxvt*termName: xterm
