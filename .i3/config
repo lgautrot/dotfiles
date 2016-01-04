@@ -30,13 +30,27 @@ font pango:Liberation Sans 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# colors, edges
+hide_edge_borders both
+new_window normal
+new_float pixel 1
+exec --no-startup-id xsetroot -solid '#000000'
+exec --no-startup-id set_display_layout
+
+# class                 border  backgr. text    indicator
+client.focused          #000000 #000000 #ffffff #000000
+client.focused_inactive #000000 #000000 #bbbbbb #000000
+client.unfocused        #000000 #000000 #888888 #000000
+client.urgent           #ff0000 #000000 #ffffff #000000
+client.placeholder      #000000 #000000 #ffffff #000000
+client.background       #ffffff
+
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec ${HOME}/bin/urxvt
 
 # lock screen
-bindsym $mod+Ctrl+l exec i3lock
-bindsym $mod+Ctrl+Delete exec i3lock
+bindsym $mod+Ctrl+l exec i3lock --color=000000
+bindsym $mod+Ctrl+Delete exec i3lock --color=000000
 
 # kill focused window
 bindsym $mod+Shift+A kill
