@@ -52,6 +52,7 @@ bindsym $mod+Return exec ${HOME}/bin/urxvt
 bindsym $mod+Ctrl+l exec i3lock --color=000000
 bindsym $mod+Ctrl+Delete exec i3lock --color=000000
 bindsym Pause exec i3lock --color=000000
+exec xautolock -time 5 -locker 'i3lock --color=000000'
 
 # screenshot
 bindsym Print exec scrot --multidisp '%Y-%m-%d_%H:%M:%S_$wx$h.png'
